@@ -83,8 +83,8 @@ export const Reviews = [
         id: "1",
         review: "I have been using Bizpend for several months now and I am thrilled with the results. It has made managing my invoices so much easier and streamlined, and I love being able to issue virtual cards to my clients.",
 
-        client : {
-            image : Avatar1 ,
+        client: {
+            image: Avatar1,
             clientName: "Esther Howard",
             role: "Digital Marketer, Apple"
         }
@@ -93,8 +93,8 @@ export const Reviews = [
         id: "2",
         review: "Bizpend has truly transformed my business operations by allowing me to manage my invoices, issue virtual cards and keep track of my clients all in one place. I can't imagine running my business without it now.",
 
-        client : {
-            image : Avatar2 ,
+        client: {
+            image: Avatar2,
             clientName: "Ralph Edwards",
             role: "Sales Executive, Amazon"
         }
@@ -103,8 +103,48 @@ export const Reviews = [
         id: "3",
         review: "The client management feature on Bizpend is so useful for keeping track of my customers and their payments. I would highly recommend this app to any business owner who wants to take their financial management to the next level.",
 
-        client : {
-            image : Avatar3 ,
+        client: {
+            image: Avatar3,
+            clientName: "Savannah Nguyen",
+            role: "Chief Financial Officer, Meta"
+        }
+    },
+    {
+        id: "4",
+        review: "Bizpend has truly transformed my business operations by allowing me to manage my invoices, issue virtual cards and keep track of my clients all in one place. I can't imagine running my business without it now.",
+
+        client: {
+            image: Avatar2,
+            clientName: "Ralph Edwards",
+            role: "Sales Executive, Amazon"
+        }
+    },
+    {
+        id: "5",
+        review: "I have been using Bizpend for several months now and I am thrilled with the results. It has made managing my invoices so much easier and streamlined, and I love being able to issue virtual cards to my clients.",
+
+        client: {
+            image: Avatar1,
+            clientName: "Esther Howard",
+            role: "Digital Marketer, Apple"
+        }
+    },
+    {
+        id: "6",
+        review: "The client management feature on Bizpend is so useful for keeping track of my customers and their payments. I would highly recommend this app to any business owner who wants to take their financial management to the next level.",
+
+        client: {
+            image: Avatar3,
+            clientName: "Savannah Nguyen",
+            role: "Chief Financial Officer, Meta"
+        }
+    },
+    {
+        id: "7",
+        review: "The client management feature on Bizpend is so useful for keeping track of my customers and their payments. I would highly recommend this app to any business owner who wants to take their financial management to the next level.",
+
+        client: {
+            image: Avatar3,
             clientName: "Savannah Nguyen",
             role: "Chief Financial Officer, Meta"
         }
@@ -115,52 +155,52 @@ export const FAQ = [
     {
         id: "1",
         question: "What is Bizpend?",
-        text:"Bizpend is an innovative corporate card issuing and expense management solution designed to streamline financial operations for businesses. It offers features such as corporate card management, expense management, invoice payments, approvals, budgets, limits and spend controls, and integrations with popular accounting and ERP software."
+        text: "Bizpend is an innovative corporate card issuing and expense management solution designed to streamline financial operations for businesses. It offers features such as corporate card management, expense management, invoice payments, approvals, budgets, limits and spend controls, and integrations with popular accounting and ERP software."
     },
     {
         id: "2",
         question: "How can Bizpend benefit my business?",
-        text:"Bizpend helps businesses efficiently manage their expenses, monitor budgets, and maintain control over corporate card usage. Our platform simplifies the expense management process, saves time, and offers valuable insights to improve financial decision-making."
+        text: "Bizpend helps businesses efficiently manage their expenses, monitor budgets, and maintain control over corporate card usage. Our platform simplifies the expense management process, saves time, and offers valuable insights to improve financial decision-making."
     },
     {
         id: "3",
         question: "Is Bizpend secure?",
-        text:"Yes, security is a top priority for Bizpend. We work with leading banking-as-a-service providers and use advanced encryption methods to ensure the safety of your financial data. Additionally, we implement rigorous fraud detection and prevention mechanisms to protect your transactions."
+        text: "Yes, security is a top priority for Bizpend. We work with leading banking-as-a-service providers and use advanced encryption methods to ensure the safety of your financial data. Additionally, we implement rigorous fraud detection and prevention mechanisms to protect your transactions."
     },
     {
         id: "4",
         question: "Can I set spending limits and controls with Bizpend?",
-        text:"Yes, our platform allows you to set and manage spending limits and controls on individual cards or accounts. This helps businesses maintain budgetary control and prevent unauthorized or excessive spending."
+        text: "Yes, our platform allows you to set and manage spending limits and controls on individual cards or accounts. This helps businesses maintain budgetary control and prevent unauthorized or excessive spending."
     },
     {
         id: "5",
         question: "Does Bizpend support invoice payments?",
-        text:"Yes, our platform facilitates invoice payments by allowing you to create virtual cards or accounts specifically for this purpose. These accounts/cards can be easily linked to specific invoices, simplifying the payment process."
+        text: "Yes, our platform facilitates invoice payments by allowing you to create virtual cards or accounts specifically for this purpose. These accounts/cards can be easily linked to specific invoices, simplifying the payment process."
     },
     {
         id: "6",
         question: "Can Bizpend integrate with my existing accounting or ERP software?",
-        text:"Yes, we offer integration with popular accounting and ERP software. Our platform can also be easily integrated with other third-party tools and services through APIs or webhooks."
+        text: "Yes, we offer integration with popular accounting and ERP software. Our platform can also be easily integrated with other third-party tools and services through APIs or webhooks."
     },
     {
         id: "7",
         question: "What kind of customer support does Bizpend provide?",
-        text:"We offer dedicated customer support through various channels, such as phone, email, and live chat. Our team is committed to addressing your questions and concerns in a timely and efficient manner."
+        text: "We offer dedicated customer support through various channels, such as phone, email, and live chat. Our team is committed to addressing your questions and concerns in a timely and efficient manner."
     },
     {
         id: "8",
         question: "How much does Bizpend cost?",
-        text:"Please visit our pricing page at https://bizpend.com for detailed information on our pricing models and fee structures. We strive to offer competitive and transparent pricing to suit the needs of businesses of all sizes."
+        text: "Please visit our pricing page at https://bizpend.com for detailed information on our pricing models and fee structures. We strive to offer competitive and transparent pricing to suit the needs of businesses of all sizes."
     },
     {
         id: "9",
         question: "How do I get started with Bizpend?",
-        text:"To get started with Bizpend, simply sign up for an account on our website https://bizpend.com, and our team will guide you through the onboarding process."
+        text: "To get started with Bizpend, simply sign up for an account on our website https://bizpend.com, and our team will guide you through the onboarding process."
     },
     {
         id: "10",
         question: "Is Bizpend compliant with relevant laws and regulations?",
-        text:"Yes, we ensure that our platform remains compliant with all relevant laws and regulations in the jurisdictions where we operate. We continually monitor regulatory changes and update our platform accordingly to maintain compliance."
+        text: "Yes, we ensure that our platform remains compliant with all relevant laws and regulations in the jurisdictions where we operate. We continually monitor regulatory changes and update our platform accordingly to maintain compliance."
     },
 ]
 

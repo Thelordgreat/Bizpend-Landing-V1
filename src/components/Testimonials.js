@@ -1,12 +1,38 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Reviews } from '../constants'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
 
 const Testimonials = () => {
 
-    const [selected, setSelected] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-    const tLength = Reviews.length;
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            if (currentSlide < Reviews.length - 3) {
+                setCurrentSlide(currentSlide + 1);
+            } else {
+                setCurrentSlide(0);
+            }
+        }, 15000);
+        return () => clearInterval(intervalId);
+    }, [currentSlide]);
+
+
+    const nextSlide = () => {
+        if (currentSlide < Reviews.length - 3) {
+            setCurrentSlide(currentSlide + 1);
+        } else {
+            setCurrentSlide(0);
+        }
+    };
+
+    const previousSlide = () => {
+        if (currentSlide > 0) {
+            setCurrentSlide(currentSlide - 1);
+        } else {
+            setCurrentSlide(Reviews.length - 3);
+        }
+    };
 
     return (
         <section className='bg-[#FFF2E7] py-16'>
@@ -22,9 +48,9 @@ const Testimonials = () => {
                         What our customers say about us
                     </h2>
 
-                    {/*==== looped testimonials ====*/}
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                        {Reviews.map((testimonial, index) => (
+                    {/*======= Desktop View testimonials ====*/}
+                    <div className='hidden sm:grid grid-cols-2 lg:grid-cols-3 gap-4'>
+                        {Reviews.slice(currentSlide, currentSlide + 3).map((testimonial, index) => (
                             <TestimonialCard
                                 key={testimonial.id}
                                 index={index}
@@ -36,18 +62,28 @@ const Testimonials = () => {
                         ))}
                     </div>
 
-                    <div className='flex items-center justify-between mt-12'>
+                    {/*====== Mobile view testimonial ======*/}
+                    <div className='grid gap-4 sm:hidden'>
+                        {Reviews.slice(currentSlide, currentSlide + 1).map((testimonial, index) => (
+                            <TestimonialCard
+                                key={testimonial.id}
+                                index={index}
+                                review={testimonial.review}
+                                image={testimonial.client.image}
+                                clientName={testimonial.client.clientName}
+                                role={testimonial.client.role}
+                            />
+                        ))}
+                    </div>
+
+                    <div className='flex flex-col gap-4 sm:flex-row items-center justify-between mt-12'>
                         <div>
                             000
                         </div>
-                        <div className='flex items-center gap-4 w-fit'>
+                        <div className='flex items-center gap-8 sm:gap-4 w-fit'>
                             <div
                                 className='border border-[#000] p-2 rounded-full flex items-center justify-center cursor-pointer'
-                                onClick={() => {
-                                    selected === 0
-                                        ? setSelected(tLength - 1)
-                                        : setSelected((prev) => prev - 1);
-                                }}
+                                onClick={previousSlide}
                             >
                                 <AiOutlineArrowLeft
                                     fontSize={20}
@@ -56,11 +92,7 @@ const Testimonials = () => {
 
                             <div
                                 className='border border-[#000] p-2 rounded-full flex items-center justify-center cursor-pointer'
-                                onClick={() => {
-                                    selected === tLength - 1
-                                        ? setSelected(0)
-                                        : setSelected((prev) => prev + 1);
-                                }}
+                                onClick={nextSlide}
                             >
                                 <AiOutlineArrowRight
                                     fontSize={20}
@@ -76,7 +108,7 @@ const Testimonials = () => {
 
 const TestimonialCard = ({ review, image, clientName, role }) => {
     return (
-        <div className='border shadow rounded-lg bg-[#FFFFFF] py-8 px-6'>
+        <div className='border shadow rounded-lg bg-[#FFFFFF] py-8 px-6 transition-all'>
             <p className='mb-4 text-[16px] text-[#000000] h-[140px]'>
                 {review}
             </p>
