@@ -7,15 +7,15 @@ const GetStarted = () => {
       <div className="container">
         <div className='flex flex-col md:flex-row items-center gap-[80px]'>
           <div className='flex-1 pt-8 md:pt-0'>
-            <h2 className='text-3xl text-white font-bold'>
+            <h2 className='text-center sm:text-left text-3xl text-white font-bold'>
               Take control and visibility over your spending today!
             </h2>
 
-            <div className='flex items-center gap-4 mt-6'>
-              <button className='bg-[#ffffff] text-[#454ADE] rounded py-2 px-6'>
+            <div className='flex flex-col sm:flex-row items-center gap-4 mt-6'>
+              <button className='bg-[#ffffff] text-[#454ADE] rounded py-2 px-6 w-full sm:w-fit'>
                 Get started
               </button>
-              <button className='bg-transparent border border-[#ffffff] rounded py-2 px-6 text-[#fff]'>
+              <button className='bg-transparent border border-[#ffffff] rounded py-2 px-6 text-[#fff] w-full sm:w-fit'>
                 Request a demo
               </button>
             </div>
