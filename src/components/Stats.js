@@ -7,25 +7,25 @@ const Stats = () => {
     return (
         <section className='bg-[#1E2338] h-[200px] mb-12'>
             <div className="container">
-                <div className="grid grid-cols-3 text-white h-[200px]">
-                    <div className='flex items-center justify-center gap-4'>
-                        <img src={users} alt="users" className='h-[50px]'/>
+                <div className="grid grid-cols-3 text-white h-[200px] place-items-center">
+                    <div className='flex justify-center gap-4'>
+                        <img src={users} alt="users" className='h-[50px] mt-1'/>
                         <span className='flex flex-col gap-2'>
                             <span className='text-4xl font-medium'>200k+</span>
                             <span className='text-[16px] font-light'>Active users</span>
                         </span>
                     </div>
 
-                    <div className='flex items-center justify-center gap-4'>
-                        <img src={heart} alt="heart" className='h-[50px]'/>
+                    <div className='flex  justify-center gap-4'>
+                        <img src={heart} alt="heart" className='h-[50px] mt-1'/>
                         <span className='flex flex-col gap-2'>
                             <span className='text-4xl font-medium'>98%</span>
                             <span className='text-[16px] font-light'>Customer satisfaction</span>
                         </span>
                     </div>
 
-                    <div className='flex items-center justify-center gap-4'>
-                        <img src={star} alt="star" className='h-[50px]'/>
+                    <div className='flex justify-center gap-4'>
+                        <img src={star} alt="star" className='h-[50px] mt-1'/>
                         <span className='flex flex-col gap-2'>
                             <span className='text-4xl font-medium'>4.9</span>
                             <span className='text-[16px] font-light'>Customer rating</span>

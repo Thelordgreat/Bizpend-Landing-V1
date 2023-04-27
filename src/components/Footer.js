@@ -12,8 +12,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <span className='text-white font-bold text-[18px]'>Quick Links</span>
-            <ul className='text-[#CBD5E1] text-[14px] flex flex-col gap-3 mt-3'>
+            <span className='text-white font-bold text-[20px]'>Quick Links</span>
+            <ul className='text-[#CBD5E1] text-[14px] flex flex-col gap-4 mt-3'>
               <li>Pricing</li>
               <li>Features</li>
               <li>FAQs</li>
@@ -21,8 +21,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <span className='text-white font-bold text-[18px]'>Company</span>
-            <ul className='text-[#CBD5E1] text-[14px] flex flex-col gap-3 mt-3'>
+            <span className='text-white font-bold text-[20px]'>Company</span>
+            <ul className='text-[#CBD5E1] text-[14px] flex flex-col gap-4 mt-3'>
               <li>About Us</li>
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
@@ -30,8 +30,8 @@ const Footer = () => {
           </div>
 
           <div className=''>
-            <span className='text-white font-bold text-[18px]'>Contact</span>
-            <div className='text-[#CBD5E1] text-[14px] flex flex-col gap-3 mt-3'>
+            <span className='text-white font-bold text-[20px]'>Contact</span>
+            <div className='text-[#CBD5E1] text-[14px] flex flex-col gap-4 mt-3'>
               <a href='/' className='flex items-center gap-2'>
                 <AiOutlineTwitter fontSize={18} />
                 Twitter

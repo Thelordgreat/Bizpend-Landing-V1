@@ -178,7 +178,7 @@ export const PricingDetails = [
         colorCode: "#000000",
         btnBg: "#454ADE",
         btnColor: "#ffffff",
-        link: "/"
+        link: "/",
     },
     {
         id: "2",
@@ -194,6 +194,7 @@ export const PricingDetails = [
         btnBg: "#ffffff",
         btnColor: "#454ADE",
         link: "/",
+        popularity: "POPULAR"
     },
     {
         id: "3",

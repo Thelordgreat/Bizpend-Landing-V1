@@ -6,7 +6,12 @@ const Features = () => {
         <section className='pt-8 pb-[7rem]'>
             <div className="container">
                 <div>
-                    <h2 className='text-center text-3xl font-bold mb-8'>
+                    <div className='text-center mb-6'>
+                        <span className='bg-[#F9F6FF] py-2 px-6 rounded-full text-[16px] text-[#454ADE] font-semibold'>
+                            Features
+                        </span>
+                    </div>
+                    <h2 className='text-center text-3xl font-bold mb-16'>
                         We have solutions that work for you
                     </h2>
                     <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
@@ -37,7 +42,7 @@ const FeatureCard = ({ image, title, text, bgColor }) => {
                 backgroundColor: `${bgColor}`
             }}
         >
-            <div className='w-full px-3 py-4'>
+            <div className='w-full p-4'>
                 <img
                     src={image}
                     alt="widget"
@@ -45,7 +50,7 @@ const FeatureCard = ({ image, title, text, bgColor }) => {
                 />
             </div>
 
-            <div className='p-3'>
+            <div className='p-4'>
                 <h3 className='text-[20px] text-[#000000] font-medium mb-2'>
                     {title}
                 </h3>

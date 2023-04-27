@@ -25,7 +25,7 @@ const Nav = () => {
                         })}
 
                         <button
-                            className='bg-[#454ADE] px-4 py-2 text-[16px] text-white rounded-lg ml-8 shadow'
+                            className='bg-[#454ADE] px-4 py-3 text-[16px] text-white rounded-xl ml-8'
                         >
                             Get Started
                         </button>

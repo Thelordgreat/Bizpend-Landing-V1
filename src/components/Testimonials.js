@@ -12,11 +12,15 @@ const Testimonials = () => {
         <section className='bg-[#FFF2E7] py-16'>
             <div className="container">
                 <div>
-                    <div className='pb-12'>
-                        <h2 className='text-center text-3xl font-bold mb-4'>
-                            What our customers say about us
-                        </h2>
+                    <div className='text-center mb-6'>
+                        <span className='bg-[#FFFFFF] py-2 px-6 rounded-full text-[16px] text-[#454ADE] font-semibold'>
+                            Testimonials
+                        </span>
                     </div>
+
+                    <h2 className='text-center text-3xl font-bold mb-4 pb-12'>
+                        What our customers say about us
+                    </h2>
 
                     {/*==== looped testimonials ====*/}
                     <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
@@ -72,7 +76,7 @@ const Testimonials = () => {
 
 const TestimonialCard = ({ review, image, clientName, role }) => {
     return (
-        <div className='border shadow rounded-lg bg-[#FFFFFF] p-6'>
+        <div className='border shadow rounded-lg bg-[#FFFFFF] py-8 px-6'>
             <p className='mb-4 text-[16px] text-[#000000] h-[140px]'>
                 {review}
             </p>
