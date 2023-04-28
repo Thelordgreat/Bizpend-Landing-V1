@@ -100,7 +100,7 @@ const Nav = () => {
 
                         <Link
                             to="/contact"
-                            className='bg-[#454ADE] w-full sm:w-fit text-[#ffffff] rounded-lg py-3 px-6'
+                            className='bg-[#454ADE] w-full sm:w-fit text-[#ffffff] rounded-lg py-3 px-6 text-center'
                             onClick={closeMobileNav}
                         >
                             Get started
