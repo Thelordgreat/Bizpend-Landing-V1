@@ -1,27 +1,17 @@
-import Faq from "./components/Faq";
-import Features from "./components/Features";
-import Footer from "./components/Footer";
-import GetStarted from "./components/GetStarted";
-import Hero from "./components/Hero";
-import Nav from "./components/Nav";
-import Pricing from "./components/Pricing";
-import Stats from "./components/Stats";
-import Testimonials from "./components/Testimonials";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Nav/>
-      <Hero/>
-      <Stats />
-      <Features />
-      <Testimonials />
-      <Faq />
-      <Pricing />
-      <GetStarted />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

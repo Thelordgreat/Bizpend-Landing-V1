@@ -13,7 +13,7 @@ const Testimonials = () => {
             } else {
                 setCurrentSlide(0);
             }
-        }, 15000);
+        }, 8000);
         return () => clearInterval(intervalId);
     }, [currentSlide]);
 
@@ -78,7 +78,10 @@ const Testimonials = () => {
 
                     <div className='flex flex-col gap-4 sm:flex-row items-center justify-between mt-12'>
                         <div>
-                            000
+                            <SliderDots
+                                totalSlides={Reviews.length - 2}
+                                activeIndex={currentSlide}
+                            />
                         </div>
                         <div className='flex items-center gap-8 sm:gap-4 w-fit'>
                             <div
@@ -133,5 +136,20 @@ const TestimonialCard = ({ review, image, clientName, role }) => {
         </div>
     )
 }
+
+const SliderDots = ({ totalSlides, activeIndex }) => {
+    const dots = [];
+    for (let i = 0; i < totalSlides; i++) {
+        dots.push(
+            <span
+                key={i}
+                className={
+                    `h-[8px] w-[8px] rounded-full mx-[5px] bg-[#ccc] cursor-pointer ${i === activeIndex ? 'bg-[#000]' : ''}`}
+            />
+        );
+    }
+
+    return <div className="flex justify-center items-center mt-5">{dots}</div>;
+};
 
 export default Testimonials

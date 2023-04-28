@@ -272,6 +272,6 @@ export const NavItems = [
     {
         id: "4",
         title: "Contact Us",
-        link: "/"
+        link: "/contact"
     },
 ]
