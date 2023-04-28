@@ -144,7 +144,7 @@ const SliderDots = ({ totalSlides, activeIndex }) => {
             <span
                 key={i}
                 className={
-                    `h-[8px] w-[8px] rounded-full mx-[5px] bg-[#ccc] cursor-pointer ${i === activeIndex ? 'bg-[#000]' : ''}`}
+                    `h-[8px] w-[8px] rounded-full mx-[5px] bg-[#ccc] cursor-pointer ${i === activeIndex ? '!bg-[#000]' : ''}`}
             />
         );
     }

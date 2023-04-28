@@ -50,11 +50,13 @@ const Nav = () => {
                             )
                         })}
 
-                        <button
-                            className='bg-[#454ADE] px-4 py-3 text-[16px] text-white rounded-xl ml-8'
-                        >
-                            Get Started
-                        </button>
+                        <Link to="/contact">
+                            <button
+                                className='bg-[#454ADE] px-4 py-3 text-[16px] text-white rounded-xl ml-8'
+                            >
+                                Get Started
+                            </button>
+                        </Link>
                     </div>
 
                     <div className='md:hidden' onClick={toggleNav}>
@@ -96,12 +98,13 @@ const Nav = () => {
                             Contact Us
                         </Link>
 
-                        <button
+                        <Link
+                            to="/contact"
                             className='bg-[#454ADE] w-full sm:w-fit text-[#ffffff] rounded-lg py-3 px-6'
                             onClick={closeMobileNav}
                         >
                             Get started
-                        </button>
+                        </Link>
                     </div>
                 ) : null}
             </div>

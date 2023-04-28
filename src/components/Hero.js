@@ -10,7 +10,7 @@ const Hero = () => {
                     <div className='flex-1 pt-[1rem] md:pt-[10rem]'>
 
                         <h2
-                            className='text-[2.2rem] lg:text-[3rem] leading-[1.2] font-semibold mb-4 text-center md:text-left'
+                            className='xs:text-[1.9rem] standard:text-[2.2rem] lg:text-[3rem] leading-[1.2] font-semibold mb-4 text-center md:text-left'
                         >
                             All-inclusive financial management solution for businesses
                         </h2>
